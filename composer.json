@@ -1,0 +1,55 @@
+{
+  "name": "jeffersongoncalves/filament-refresh-sidebar-echo",
+  "description": "",
+  "keywords": [
+    "jeffersongoncalves",
+    "laravel",
+    "filament",
+    "filament-plugin"
+  ],
+  "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar-echo",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jefferson Gonçalves",
+      "email": "gerson.simao.92@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "filament/filament": "^4.0",
+    "spatie/laravel-package-tools": "^1.14.0"
+  },
+  "require-dev": {
+    "larastan/larastan": "^3.0",
+    "laravel/pint": "^1.21",
+    "orchestra/testbench": "^9.0|^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JeffersonGoncalves\\Filament\\RefreshSidebarEcho\\": "src"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+    "analyse": "vendor/bin/phpstan analyse",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JeffersonGoncalves\\Filament\\RefreshSidebarEcho\\RefreshSidebarEchoServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
