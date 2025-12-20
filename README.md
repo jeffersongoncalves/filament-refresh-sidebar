@@ -1,14 +1,14 @@
 <div class="filament-hidden">
 
-![Filament Refresh Sidebar Echo](https://raw.githubusercontent.com/jeffersongoncalves/filament-refresh-sidebar-echo/1.x/art/jeffersongoncalves-filament-refresh-sidebar-echo.png)
+![Filament Refresh Sidebar](https://raw.githubusercontent.com/jeffersongoncalves/filament-refresh-sidebar/1.x/art/jeffersongoncalves-filament-refresh-sidebar.png)
 
 </div>
 
-# Filament Refresh Sidebar Echo
+# Filament Refresh Sidebar
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-refresh-sidebar-echo.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar-echo)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-refresh-sidebar-echo/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-refresh-sidebar-echo/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
-[![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-refresh-sidebar-echo.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar-echo)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-refresh-sidebar/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-refresh-sidebar/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
+[![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar)
 
 ## Requirements
 
@@ -20,7 +20,7 @@
 You can install the package via composer:
 
 ```bash
-composer require jeffersongoncalves/filament-refresh-sidebar-echo
+composer require jeffersongoncalves/filament-refresh-sidebar
 ```
 
 ## Development

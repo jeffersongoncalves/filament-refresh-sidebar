@@ -1,5 +1,5 @@
 {
-  "name": "jeffersongoncalves/filament-refresh-sidebar-echo",
+  "name": "jeffersongoncalves/filament-refresh-sidebar",
   "description": "",
   "keywords": [
     "jeffersongoncalves",
@@ -7,7 +7,7 @@
     "filament",
     "filament-plugin"
   ],
-  "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar-echo",
+  "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar",
   "license": "MIT",
   "authors": [
     {
@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "JeffersonGoncalves\\Filament\\RefreshSidebarEcho\\": "src"
+      "JeffersonGoncalves\\Filament\\RefreshSidebar\\": "src"
     }
   },
   "scripts": {
@@ -46,7 +46,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "JeffersonGoncalves\\Filament\\RefreshSidebarEcho\\RefreshSidebarEchoServiceProvider"
+        "JeffersonGoncalves\\Filament\\RefreshSidebar\\RefreshSidebarServiceProvider"
       ]
     }
   },
