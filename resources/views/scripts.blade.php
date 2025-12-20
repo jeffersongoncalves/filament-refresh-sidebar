@@ -1,8 +1,9 @@
 @if(filament()->auth()->check())
-    {{ get_class(filament()->auth()) }}
     <script>
-        window.Echo.private('App.Models.User.{{ filament()->auth()->id() }}').listen('.database-notifications.sent', () => {
-            Livewire.dispatch('refresh-sidebar')
-        });
+        if (window.Echo !== undefined) {
+            window.Echo.private('{{ str(get_class(filament()->auth()->user()))->replace('\\','.') }}.{{ filament()->auth()->user()->getAuthIdentifier() }}').listen('.database-notifications.sent', () => {
+                Livewire.dispatch('refresh-sidebar')
+            });
+        }
     </script>
 @endif
