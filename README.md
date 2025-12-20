@@ -10,6 +10,10 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-refresh-sidebar/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-refresh-sidebar/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar)
 
+## Description
+
+**Filament Refresh Sidebar** is a lightweight plugin designed to keep your Filament sidebar navigation in sync. It's particularly useful when you have dynamic navigation badges or menu items that depend on database changes, ensuring the sidebar updates automatically without a full page reload.
+
 ## Requirements
 
 - PHP 8.2 or higher
@@ -22,6 +26,37 @@ You can install the package via composer:
 ```bash
 composer require jeffersongoncalves/filament-refresh-sidebar
 ```
+
+## Usage
+
+Register the plugin in your Filament Panel Provider (typically `app/Providers/Filament/AdminPanelProvider.php`):
+
+```php
+use JeffersonGoncalves\Filament\RefreshSidebar\RefreshSidebarPlugin;
+
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        // ... other configuration
+        ->plugins([
+            RefreshSidebarPlugin::make(),
+        ]);
+}
+```
+
+### Automatic Refresh
+
+The plugin automatically listens for database notifications via Laravel Echo (if configured) and triggers a sidebar refresh when a new notification is received.
+
+### Manual Refresh
+
+You can also manually trigger a sidebar refresh from any Livewire component by dispatching the `refresh-sidebar` event:
+
+```php
+$this->dispatch('refresh-sidebar');
+```
+
+This is useful for updating navigation badges after custom actions like creating, updating, or deleting records.
 
 ## Development
 

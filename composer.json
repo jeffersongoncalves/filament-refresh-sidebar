@@ -1,11 +1,15 @@
 {
   "name": "jeffersongoncalves/filament-refresh-sidebar",
-  "description": "",
+  "description": "Automatically refresh the Filament sidebar navigation when certain events occur, ensuring menu items and badges are always up to date.",
   "keywords": [
     "jeffersongoncalves",
     "laravel",
     "filament",
-    "filament-plugin"
+    "filament-plugin",
+    "sidebar",
+    "refresh",
+    "navigation",
+    "livewire"
   ],
   "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar",
   "license": "MIT",
