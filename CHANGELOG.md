@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2 - 2026-02-24
+
+### What's Changed
+
+- Add Laravel 13.x support (orchestra/testbench ^11.0)
+
 ## 2.0.0 - 2026-02-16
 
 ### What's Changed
