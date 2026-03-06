@@ -9,6 +9,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-refresh-sidebar/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-refresh-sidebar/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-refresh-sidebar)
+[![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-refresh-sidebar.svg?style=flat-square)](LICENSE.md)
 
 ## Description
 
