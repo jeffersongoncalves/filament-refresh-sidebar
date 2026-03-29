@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Refresh Sidebar](https://raw.githubusercontent.com/jeffersongoncalves/filament-refresh-sidebar/1.x/art/jeffersongoncalves-filament-refresh-sidebar.png)
+![Filament Refresh Sidebar](https://raw.githubusercontent.com/jeffersongoncalves/filament-refresh-sidebar/1.x/art/jeffersongoncalves-filament-refresh-sidebar.jpg)
 
 </div>
 
