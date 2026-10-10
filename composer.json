@@ -1,59 +1,67 @@
 {
-  "name": "jeffersongoncalves/filament-refresh-sidebar",
-  "description": "Automatically refresh the Filament sidebar navigation when certain events occur, ensuring menu items and badges are always up to date.",
-  "keywords": [
-    "jeffersongoncalves",
-    "laravel",
-    "filament",
-    "filament-plugin",
-    "sidebar",
-    "refresh",
-    "navigation",
-    "livewire"
-  ],
-  "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Jefferson Gonçalves",
-      "email": "gerson.simao.92@gmail.com",
-      "role": "Developer"
+    "name": "jeffersongoncalves/filament-refresh-sidebar",
+    "description": "Automatically refresh the Filament sidebar navigation when certain events occur, ensuring menu items and badges are always up to date.",
+    "keywords": [
+        "jeffersongoncalves",
+        "laravel",
+        "filament",
+        "filament-plugin",
+        "sidebar",
+        "refresh",
+        "navigation",
+        "livewire"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/filament-refresh-sidebar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^4.8",
+        "spatie/laravel-package-tools": "^1.14.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.21",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\RefreshSidebar\\": "src"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Filament\\RefreshSidebar\\RefreshSidebarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\RefreshSidebar\\Tests\\": "tests"
+        }
     }
-  ],
-  "require": {
-    "php": "^8.2",
-    "filament/filament": "^4.8",
-    "spatie/laravel-package-tools": "^1.14.0"
-  },
-  "require-dev": {
-    "larastan/larastan": "^3.0",
-    "laravel/pint": "^1.21",
-    "orchestra/testbench": "^9.0|^10.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "JeffersonGoncalves\\Filament\\RefreshSidebar\\": "src"
-    }
-  },
-  "scripts": {
-    "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-    "analyse": "vendor/bin/phpstan analyse",
-    "format": "vendor/bin/pint"
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "pestphp/pest-plugin": true,
-      "phpstan/extension-installer": true
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "JeffersonGoncalves\\Filament\\RefreshSidebar\\RefreshSidebarServiceProvider"
-      ]
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
 }
